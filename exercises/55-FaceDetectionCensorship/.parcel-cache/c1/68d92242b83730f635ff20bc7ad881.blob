@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Censorship</title>
+    <link rel="stylesheet" href="f035bb7ab154e63f25fb2fbba95697e9">
+    <style data-parcel-key="33329bbc55eeb25941766e42ce714457">
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .wrap {
+        position: relative;
+        min-height: 100vh;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .wrap > * {
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      .face {
+        position: absolute;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="controls">
+      <label for="SCALE">
+        SCALE:
+        <input value="1.35" type="range" name="SCALE" min="0.3" max="3" step="0.1">
+      </label>
+      <label for="SIZE">
+        SIZE:
+        <input value="10" type="range" name="SIZE" min="1" max="100" step="1">
+      </label>
+    </div>
+    <div class="wrap">
+      <video class="webcam"></video>
+      <canvas class="video"></canvas>
+      <canvas class="face"></canvas>
+    </div>
+    <script src="7a080e90addb80a046ad9c8863f69937"></script>
+  </body>
+</html>
